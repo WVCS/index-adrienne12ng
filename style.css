@@ -1,3 +1,28 @@
 body {
+li{
+  display: inline;
+  padding: 5%;
+}
 
+a{
+  text-decoration: none;
+  color: #F8EDEB;
+  background-color: #75CEAF;
+}
+
+a:hover{
+  background-color: #89D3B5;
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
 }
