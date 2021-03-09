@@ -1,1 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=">
+  <title>Ice Cream</title>
+  <link rel="icon" href="https://www.powayusd.com/getmedia/ab8dcd57-c509-47ea-b0db-28d2c5769a02/wvhsLogo_2.aspx?width=123&height=100&ext=.png">
+</head>
+<body>
+    <div class="scoops">
+    </div>
+  <div class="title">
+  <img src="ice cream.png" width="50" height="60">
+  <h2>Ice Cream</h2>
+  <p>We serve ice cream for people who want it</p>
+  
+  <ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
 
+</body>
+</html>
+ 
+<style>
+  body{
+  background-color: #FFE5D9;
+  margin: 0px;
+  color: white;
+}
+
+div.scoops{
+  background-image: url('https://www.fona.com/wp-content/uploads/2018/05/ice-cream-cartons-flavors-colorful-1200x800.jpg');
+  height: 350px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+div.title{
+  position: sticky;
+  top: 0;
+  left: 0;
+  text-align: center;
+  background-color: #F4ACB7;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #FFCAD4;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #FFD8D7;
+}
+
+.active {
+  background-color: #FFDFD8;
+}
+
+
+</style>
