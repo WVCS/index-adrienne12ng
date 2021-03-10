@@ -10,22 +10,26 @@
     <div class="scoops">
     </div>
   <div class="title">
-  <img src="ice cream.png" width="50" height="60">
+  <img src="ice cream.png">
   <h2>Ice Cream</h2>
   <p>We serve ice cream for people who want it</p>
   
   <ul>
   <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
+  <li><a href="#news">Menu</a></li>
+  <li><a href="#contact">Locations</a></li>
   <li><a href="#about">About</a></li>
 </ul>
-
+    
+<div class="logo">
+  <img class="logoimg" src="ice cream.png">
+</div>
+    
 </body>
 </html>
  
 <style>
-  body{
+ body{
   background-color: #FFE5D9;
   margin: 0px;
   color: white;
@@ -73,6 +77,32 @@ li a:hover:not(.active) {
 .active {
   background-color: #FFDFD8;
 }
+
+.button{
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+div.logo{
+  width: 100%;
+  float: right;
+  position: absolute;
+}
+
+img.logoimg{
+  float: right;
+}
+
+
+
+
 
 
 </style>
