@@ -8,9 +8,12 @@
 </head>
 <body>
     <div class="div1">
+    <div class="logo">
+    <img src="ice cream.png" width="40" height="90">
+    </div>
     </div>
   <div class="div2">
-  <img class="logo" src="ice cream.png" width="40" height="90">
+  <img src="ice cream.png" width="40" height="90">
   <h2>Ice Cream</h2>
   <p>We serve ice cream for people who want it</p>
   
@@ -22,20 +25,26 @@
 </ul>
 </div>
 
-<div class="div3"
-   
-    
+<div class="wrap1">
+<div class="div3">
+</div>
+
+<div class="div4">
+</div>
+</div>
+  
 </body>
 </html>
  
 <style>
 body{
-  background-color: #FFE5D9;
+  background-color: #EF8191;
   margin: 0px;
   color: white;
 }
 
 .div1{
+  position: sticky;
   background-image: url('https://www.fona.com/wp-content/uploads/2018/05/ice-cream-cartons-flavors-colorful-1200x800.jpg');
   height: 350px;
   background-size: cover;
@@ -90,6 +99,9 @@ li a:hover:not(.active) {
   cursor: pointer;
 }
 
+.wrap1{
+  width: 100%;
+}
 .div3{
   width: 50%;
   height: 600px;
@@ -98,9 +110,16 @@ li a:hover:not(.active) {
   background-size: cover;
 }
 
+.div4{
+  width: 50%;
+  background-image: url('https://c0.wallpaperflare.com/preview/589/403/702/blurred-background-colors-delicious-hand.jpg');
+  height: 800px;
+  background-repeat: no repeat;
+  background-size: cover;
+}
 
-
-
-
+.logo{
+  position: initial;
+}
 
 </style>
