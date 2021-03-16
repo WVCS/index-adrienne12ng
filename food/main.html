@@ -7,11 +7,6 @@
   <link rel="icon" href="https://www.powayusd.com/getmedia/ab8dcd57-c509-47ea-b0db-28d2c5769a02/wvhsLogo_2.aspx?width=123&height=100&ext=.png">
 </head>
 <body>
-    <div class="div1">
-    <div class="logo">
-    <img src="ice cream.png" width="40" height="90">
-    </div>
-    </div>
   <div class="div2">
   <img src="ice cream.png" width="40" height="90">
   <h2>Ice Cream</h2>
@@ -24,27 +19,44 @@
   <li><a href="../index.html">About the Creator</a></li>
 </ul>
 </div>
+  <div class="div1">
+    <div class="logo">
+    <img src="ice cream.png" width="40" height="90">
+    </div>
+    </div>
 
-<div class="wrap1">
+
 <div class="div3">
 </div>
 
-<div class="div4">
+<div class="wrapper">
+  <div class="box1 a"></div>
+  <div class="box2 b"></div>
+  <div class="box3 c"></div>
+  <div class="box d">
+    <center>
+    <h5>Catering</h5>
+    </center>
+  </div>
+  <div class="box e">
+    <center>
+    <h5>Vegan Options!</h5>
+    </center>
+  </div>
+  <div class="box f">F</div>
 </div>
-</div>
-  
 </body>
 </html>
- 
+
 <style>
 body{
   background-color: #EF8191;
   margin: 0px;
   color: white;
+  font-family: garamond;
 }
 
 .div1{
-  position: sticky;
   background-image: url('https://www.fona.com/wp-content/uploads/2018/05/ice-cream-cartons-flavors-colorful-1200x800.jpg');
   height: 350px;
   background-size: cover;
@@ -108,9 +120,10 @@ li a:hover:not(.active) {
   background-image: url('https://i0.wp.com/triangleonthecheap.com/wordpress/wp-content/uploads/2019/06/Woman-S-Hands-Holding-Melting-Ice-Cream-Waffle-Cone-In-Hands-On-Woman-S-Hands-Holding-Melting-Ice-Cream-Waffle-Cone-In-Hands-On-Summer-L.jpg?fit=610%2C407&ssl=1');
   background-repeat: no-repeat;
   background-size: cover;
+  border: 8px solid #FFE5D9;
 }
 
-.div4{
+.div5{
   width: 50%;
   background-image: url('https://c0.wallpaperflare.com/preview/589/403/702/blurred-background-colors-delicious-hand.jpg');
   height: 800px;
@@ -122,4 +135,51 @@ li a:hover:not(.active) {
   position: fixed;
 }
 
+div.wrapper{
+  background-color: #FFE5D9;
+  border: 8px solid #FFE5D9;
+}
+
+.grid1{
+  background-color: #FFE5D9;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 300px 200px 100px;
+  grid-auto-rows: 200px;
+  border: 4px solid white;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 500px 500px 500px;
+  grid-template-rows: 500px 500px 500px;
+  grid-gap: 10px;
+  background-color: #EF8191;
+  color: #444;
+  border: #FFE5D9;
+}
+
+.box {
+  background-color: #EF8191;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.box1{
+  background-image: url('https://www.cookingclassy.com/wp-content/uploads/2019/07/vanilla-ice-cream-13.jpg');
+   background-size: cover;
+}
+
+.box2{
+  background-image: url('https://lovingitvegan.com/wp-content/uploads/2019/08/Vegan-Ice-Cream-14.jpg');
+  background-size: cover;
+}
+
+.box3{
+  background-image: url('https://i1.wp.com/www.goodigcaptions.com/wp-content/uploads/2020/07/Ice-Cream-Instagram-Captions.jpg?fit=1218%2C733&ssl=1');
+  background-size: cover;
+}
+  
 </style>
