@@ -12,38 +12,90 @@
   <h2>Ice Cream</h2>
   <p>We serve ice cream for people who want it</p>
   
-  <ul>
+  <ul class="nav">
   <li><a class="active" href="food/main.html">Home</a></li>
-  <li><a href="#news">Menu</a></li>
+  <li><a href="#mymenu">Menu</a></li>
   <li><a href="#contact">Locations</a></li>
   <li><a href="../index.html">About the Creator</a></li>
 </ul>
 </div>
   <div class="div1">
-    <div class="logo">
-    <img src="ice cream.png" width="40" height="90">
     </div>
-    </div>
+    <br>
 
-
+<div class="deliver" id="mymenu">
+  <h3>Concerned about the pandemic?</h3>
+  <h2>We deliver ice cream!</h2>
+  <p>(But we cannot guarantee that it won't melt)</p>
+  <button class="button button1">Order here</button>
+  </div>
+  <br>
+  
 <div class="div3">
+  <div class="menu" style="background-image:url('https://i0.wp.com/triangleonthecheap.com/wordpress/wp-content/uploads/2019/06/Woman-S-Hands-Holding-Melting-Ice-Cream-Waffle-Cone-In-Hands-On-Woman-S-Hands-Holding-Melting-Ice-Cream-Waffle-Cone-In-Hands-On-Summer-L.jpg?fit=610%2C407&ssl=1');">
+  </div>
+  <div class="menu" style="background-color:#FFE5D9;">
+    <h2 class="heading1">Menu</h2>
+    <center>
+    <table>
+     <tr>
+      <th>Basic flavors</th>
+       <td>Vanilla</td>
+       <td>Chocolate</td>
+       <td>Strawberry</td>
+     </tr>
+     <tr>
+      <th>Monthly specials</th>
+        <td>Raspberry chocolate</td>
+        <td>Fruity pebbles</td>
+        <td>Sesame</td>
+      </tr>
+      <th>Popular choices</th>
+        <td>Sea salt caramel</td>
+        <td>Cookies and cream</td>
+        <td>Mint chip</td>
+      </tr>
+      <tr>
+      <th>Exotic picks</th>
+        <td>Wasabi</td>
+        <td>Cilantro lime</td>
+        <td>Bacon</td>
+      </tr>  
+      <tr>
+      <th>Nuts</th>
+        <td>Pistachio</td>
+        <td>Pecan</td>
+        <td>Peanut butter</td>
+      </tr>
+      <tr>
+      <th>Sorbet</th>
+        <td>Pineapple</td>
+        <td>Mango</td>
+        <td>Lemon</td>
+      </tr>
+</table>  
+</center>
+  </div>
 </div>
+<br>
 
 <div class="wrapper">
   <div class="box1 a"></div>
   <div class="box2 b"></div>
   <div class="box3 c"></div>
-  <div class="box d">
-    <center>
-    <h5>Catering</h5>
-    </center>
+  <div class="box4 d">
+    <h3>Catering</h3>
   </div>
-  <div class="box e">
-    <center>
-    <h5>Vegan Options!</h5>
-    </center>
+  <div class="box5 e">
+    <h3>Vegan Options!</h3>
   </div>
-  <div class="box f">F</div>
+  <div class="box6 f">
+    <h3>Wear a mask!</h3>
+    <p>We must take precautions coming forth; all our employees wear masks to keep a safe environment
+  </div>
+</div>
+ 
+<div class="div6">
 </div>
 </body>
 </html>
@@ -71,7 +123,7 @@ body{
   background-color: #F4ACB7;
 }
 
-ul {
+.nav{
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -89,74 +141,117 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  transition-duration: 0.4s;
+  
 }
 
 li a:hover:not(.active) {
   background-color: #FFD8D7;
+  color: #9D8189;
 }
 
 .active {
-  background-color: #FFDFD8;
+  background-color: #FFDFD8; 
 }
 
-.button{
+.deliver{
+  text-align: center;
+  padding: 1%;
+}
+
+.button {
   border: none;
-  color: white;
-  padding: 15px 32px;
+  background-color: #F4ACB7;
+  padding: 16px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
+  transition-duration: 0.4s;
   cursor: pointer;
+  font-family: garamond;
+  color: white;
+}
+
+.button1:hover{
+  background-color: #FFCAD4;
+  color: #9D8189;
 }
 
 .wrap1{
   width: 100%;
 }
-.div3{
-  width: 50%;
-  height: 600px;
-  background-image: url('https://i0.wp.com/triangleonthecheap.com/wordpress/wp-content/uploads/2019/06/Woman-S-Hands-Holding-Melting-Ice-Cream-Waffle-Cone-In-Hands-On-Woman-S-Hands-Holding-Melting-Ice-Cream-Waffle-Cone-In-Hands-On-Summer-L.jpg?fit=610%2C407&ssl=1');
-  background-repeat: no-repeat;
-  background-size: cover;
-  border: 8px solid #FFE5D9;
+
+*{
+  box-sizing: border-box;
 }
 
-.div5{
+.menu {
+  float: left;
   width: 50%;
-  background-image: url('https://c0.wallpaperflare.com/preview/589/403/702/blurred-background-colors-delicious-hand.jpg');
-  height: 800px;
-  background-repeat: no repeat;
+  padding: 10px;
+  height: 300px;
   background-size: cover;
+  background-repeat: repeat;
+  height: 600px;
+  font-family: garamond;
+}
+
+.div3:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.heading1{
+  color: #EF8191;
+  text-align: center;
+}
+
+.table{
+  background-color: #FFE5D9;
+}
+
+table, th, td{
+  border: 2px solid white;
+  flex: 100%;
+}
+
+th{
+  text-align: left;
+}
+
+th, td{
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-right: 2%;
+  padding-left: 2%;
+}
+
+tr{
+  transition-duration: 0.4s;
+  color: #EF8191;
+
+}
+
+tr:hover{
+  background-color: #FFCAD4;
+  transition-duration: 0.4s;
+  color: white;
 }
 
 .logo{
   position: fixed;
 }
 
-div.wrapper{
-  background-color: #FFE5D9;
-  border: 8px solid #FFE5D9;
-}
-
-.grid1{
-  background-color: #FFE5D9;
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: 300px 200px 100px;
-  grid-auto-rows: 200px;
-  border: 4px solid white;
-}
-
 .wrapper {
   display: grid;
-  grid-template-columns: 500px 500px 500px;
+  grid-template-columns: 505px 505px 505px;
   grid-template-rows: 500px 500px 500px;
   grid-gap: 10px;
   background-color: #EF8191;
   color: #444;
-  border: #FFE5D9;
 }
 
 .box {
@@ -170,15 +265,47 @@ div.wrapper{
 .box1{
   background-image: url('https://www.cookingclassy.com/wp-content/uploads/2019/07/vanilla-ice-cream-13.jpg');
    background-size: cover;
+   border: 8px solid #FFE5D9;
+
 }
 
 .box2{
   background-image: url('https://lovingitvegan.com/wp-content/uploads/2019/08/Vegan-Ice-Cream-14.jpg');
   background-size: cover;
+  border: 8px solid #FFE5D9;
 }
 
 .box3{
-  background-image: url('https://i1.wp.com/www.goodigcaptions.com/wp-content/uploads/2020/07/Ice-Cream-Instagram-Captions.jpg?fit=1218%2C733&ssl=1');
+  background-image: url('https://news.llu.edu/sites/news.llu.edu/files/styles/featured_image_755x425/public/screen_shot_2020-08-11_at_9.15.07_am.png?itok=4wgL0Fl1&c=d840cfde9df530f5582918792e0040a0');
+  background-size: cover;
+  border: 8px solid #FFE5D9;
+}
+
+.box4{
+  background-color: #F4ACB7;
+  color: white;
+  text-align: center;
+  border: 8px solid #FFE5D9
+}
+
+.box5{
+  background-color: #F4ACB7;
+  color: white;
+  text-align: center;
+  border: 8px solid #FFE5D9;
+}
+
+.box6{
+  background-color: #F4ACB7;
+  color: white;
+  text-align: center;
+  border: 8px solid #FFE5D9;
+
+}
+
+.div6{
+  background-image: url('');
+  background-repeat: no-repeat;
   background-size: cover;
 }
   
