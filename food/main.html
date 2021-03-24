@@ -7,15 +7,15 @@
   <link rel="icon" href="https://www.powayusd.com/getmedia/ab8dcd57-c509-47ea-b0db-28d2c5769a02/wvhsLogo_2.aspx?width=123&height=100&ext=.png">
 </head>
 <body>
-  <div class="div2">
+  <div class="stuck">
   <img src="ice cream.png" width="40" height="90">
-  <h2>Ice Cream</h2>
-  <p>We serve ice cream for people who want it</p>
+    <h2>Summertime Ice Cream</h2>
+    <p>We serve ice cream for people who want it (but we close during the winter because we don't want people getting sick)</p>
   
   <ul class="nav">
-  <li><a class="active" href="main.html">Home</a></li>
+  <li><a class="active" href="food/main.html">Home</a></li>
   <li><a href="#mymenu">Menu</a></li>
-  <li><a href="#contact">Locations</a></li>
+  <li><a href="#sandiego">Locations</a></li>
   <li><a href="../index.html">About the Creator</a></li>
 </ul>
 </div>
@@ -26,7 +26,7 @@
 <div class="deliver" id="mymenu">
   <h3>Concerned about the pandemic?</h3>
   <h2>We deliver ice cream!</h2>
-  <p>(But we cannot guarantee that it won't melt)</p>
+  <p>(But we cannot guarantee that it won't melt and keep in mind that you can't actually order...)</p>
   <button class="button button1">Order here</button>
   </div>
   <br>
@@ -73,30 +73,56 @@
         <td>Mango</td>
         <td>Lemon</td>
       </tr>
-</table>  
+      </table>        
+      <div id="sandiego"></div>
 </center>
   </div>
+</div>
+</div>
+
+<div class="location">
+  <h2>Location: San Diego, CA</h2>
+  <p>Jk there are no locations; we're broke (but this site was made in San Diego)</p>
+  <img src="https://lh3.googleusercontent.com/proxy/44d1HR5-Wkr8VHloN1eGJaVHTFZWQfqc6ZwTiIeM3pNYmwtITdlPCaKdqyxNhuFf1QvFbppXav3_spxNk7enXfTeSGbBVlegHP4yTEqLC-sqcjgswC2FOUxe4spNrkbmiN8yB8DFCB_Y" width="60" height="60">
+</div>
+<div class="media">
+  <div class="info" style= "background-image:url('https://i1.wp.com/www.goodigcaptions.com/wp-content/uploads/2020/07/Ice-Cream-Instagram-Captions.jpg?fit=1218%2C733&ssl=1');">
+  </div>
+  
+<div class="info" style="background-color:#FFE5D9;">
+    <h2 class="myheading1">Stay Connected</h2>
+    <h3 class="myheading2">Join the Summertime community!</h3>
+    <center>
+      <p>We look forward to seeing you there :)</p>
+    <center>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1200px-Facebook_f_logo_%282019%29.svg.png" width="60" height="60">
+    <img src="https://content.instructables.com/ORIG/FYU/BJ78/JEEUA65D/FYUBJ78JEEUA65D.png?auto=webp&fit=bounds&frame=1" width="60" height="60">
+     <img src="https://help.twitter.com/content/dam/help-twitter/brand/logo.png" width="60" height="60">
+    </center>
+  </div>
+</div>
 </div>
 <br>
 
 <div class="wrapper">
-  <div class="box1 a"></div>
-  <div class="box2 b"></div>
-  <div class="box3 c"></div>
-  <div class="box4 d">
+  <div class="box a"></div>
+  <div class="box b"></div>
+  <div class="box c"></div>
+  <div class="box d">
     <h3>Catering</h3>
+    <p>We cater for birthday parties and fundraisers! Turn your next event into a fun-filled celebration with our desserts!</p>
   </div>
-  <div class="box5 e">
+  <div class="box e">
     <h3>Vegan Options!</h3>
+    <p>To create a healthier alternative, we use coconut milk for several of our ice cream options. We have several non-dairy products coming soon to our menu!</p>
   </div>
-  <div class="box6 f">
+  <div class="box f">
     <h3>Wear a mask!</h3>
-    <p>We must take precautions coming forth; all our employees wear masks to keep a safe environment
+    <p>We must take precautions coming forth; all our employees wear masks to keep a safe environment :)</p>
   </div>
 </div>
- 
-<div class="div6">
 </div>
+
 </body>
 </html>
 
@@ -108,19 +134,19 @@ body{
   font-family: garamond;
 }
 
-.div1{
-  background-image: url('https://www.fona.com/wp-content/uploads/2018/05/ice-cream-cartons-flavors-colorful-1200x800.jpg');
-  height: 350px;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.div2{
+.stuck{
   position: sticky;
   top: 0;
   left: 0;
   text-align: center;
   background-color: #F4ACB7;
+}
+
+.div1{
+  background-image: url('https://www.fona.com/wp-content/uploads/2018/05/ice-cream-cartons-flavors-colorful-1200x800.jpg');
+  height: 350px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .nav{
@@ -147,6 +173,10 @@ li a {
 
 li a:hover:not(.active) {
   background-color: #FFD8D7;
+  color: #9D8189;
+}
+
+li a:hover{
   color: #9D8189;
 }
 
@@ -177,10 +207,6 @@ li a:hover:not(.active) {
 .button1:hover{
   background-color: #FFCAD4;
   color: #9D8189;
-}
-
-.wrap1{
-  width: 100%;
 }
 
 *{
@@ -241,8 +267,41 @@ tr:hover{
   color: white;
 }
 
-.logo{
-  position: fixed;
+.location{
+  text-align: center;
+  padding: 4%;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.info {
+  float: right;
+  width: 50%;
+  padding: 10px;
+  height: 300px;
+  background-size: cover;
+  background-repeat: repeat;
+  height: 600px;
+  font-family: garamond;
+  color: #9D8189;
+}
+
+.media:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.myheading1{
+  color: #EF8191;
+  text-align: center;
+}
+
+.myheading2{
+  color: #EF8191;
+  text-align: center;
 }
 
 .wrapper {
@@ -251,62 +310,58 @@ tr:hover{
   grid-template-rows: 500px 500px 500px;
   grid-gap: 10px;
   background-color: #EF8191;
-  color: #444;
+  color: white;
 }
 
 .box {
-  background-color: #EF8191;
-  color: #fff;
+  background-color: #F4ACB7;
+  color: white;
   border-radius: 5px;
   padding: 20px;
-  font-size: 150%;
+  border: 8px solid #FFE5D9;
 }
 
-.box1{
+.a{
   background-image: url('https://www.cookingclassy.com/wp-content/uploads/2019/07/vanilla-ice-cream-13.jpg');
-   background-size: cover;
-   border: 8px solid #FFE5D9;
-
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.box2{
+.b{
   background-image: url('https://lovingitvegan.com/wp-content/uploads/2019/08/Vegan-Ice-Cream-14.jpg');
   background-size: cover;
-  border: 8px solid #FFE5D9;
+  background-repeat: no-repeat;
 }
 
-.box3{
+.c{
   background-image: url('https://news.llu.edu/sites/news.llu.edu/files/styles/featured_image_755x425/public/screen_shot_2020-08-11_at_9.15.07_am.png?itok=4wgL0Fl1&c=d840cfde9df530f5582918792e0040a0');
   background-size: cover;
-  border: 8px solid #FFE5D9;
-}
-
-.box4{
-  background-color: #F4ACB7;
-  color: white;
-  text-align: center;
-  border: 8px solid #FFE5D9
-}
-
-.box5{
-  background-color: #F4ACB7;
-  color: white;
-  text-align: center;
-  border: 8px solid #FFE5D9;
-}
-
-.box6{
-  background-color: #F4ACB7;
-  color: white;
-  text-align: center;
-  border: 8px solid #FFE5D9;
-
-}
-
-.div6{
-  background-image: url('');
   background-repeat: no-repeat;
-  background-size: cover;
 }
-  
+
+.d{
+  background-color: #F4ACB7;
+  color: white;
+  text-align: center;
+  border: 2px solid #FFE5D9
+}
+
+.e{
+  background-color: #F4ACB7;
+  color: white;
+  text-align: center;
+  border: 2px solid #FFE5D9;
+}
+
+.f{
+  background-color: #F4ACB7;
+  color: white;
+  text-align: center;
+  border: 2px solid #FFE5D9;
+}
+
+.d, .e, .f{
+  height: 150px;
+}
+
 </style>
