@@ -15,10 +15,10 @@
     <h2>International Artist Day Showcase</h2>
     </div>
   <ul class="nav">
-  <li><a class="active" href="main.html">Home</a></li>
-  <li><a href="#event">Events</a></li>
-  <li><a href="#sandiego">Locations</a></li>
-  <li><a href="#staff">About Us</a></li>
+  <li class="bar"><a class="active" href="main.html">Home</a></li>
+  <li class="bar"><a href="#event">Events</a></li>
+  <li class="bar"><a href="#CAandNY">Locations</a></li>
+  <li class="bar"><a href="#staff">About Us</a></li>
   </ul>
   </div>
   
@@ -29,7 +29,7 @@
     <div class="penart" style="background-image:url('https://cdn.shopify.com/s/files/1/0049/6261/5365/files/fountain-pen-CO-horizonal_large.png?v=1572382194');">
     </div>
     <div class="info">
-      <h4>International Artist Day | Monday, April 15, 2021</h4>
+      <h4>International Artist Day | Starting Monday, April 15, 2021</h4>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque ornare aenean euismod elementum nisi quis eleifend. Ut tristique et egestas quis ipsum. Nullam eget felis eget nunc lobortis mattis aliquam faucibus purus. Porttitor lacus luctus accumsan tortor posuere.</p>
       <p>Elementum tempus egestas sed sed risus pretium quam vulputate dignissim. Viverra maecenas accumsan lacus vel facilisis volutpat. Morbi leo urna molestie at elementum eu facilisis sed. Ultrices vitae auctor eu augue ut lectus arcu bibendum. In ornare quam viverra orci sagittis. Viverra nam libero justo laoreet sit amet. Id ornare arcu odio ut sem nulla pharetra diam. In hac habitasse platea dictumst vestibulum rhoncus est pellentesque. Morbi tristique senectus et netus et malesuada fames ac. Id aliquet risus feugiat in. Nec nam aliquam sem et tortor consequat id porta. Quis ipsum suspendisse ultrices gravida. </p>
     </div>
@@ -60,7 +60,7 @@
   </div>
   </div>
   
-<div class="digital" style="background-image: url('https://lh3.googleusercontent.com/proxy/wjobPe6-orKoa6PH2lUephbS9k0RJwCRtvnpuuBp-LKNz8Jaroz8vdR4dv1wRIXog1qEvtklWIAWUUnl88LDH5VJHM8tftvagIivY_7zIssSwt0Gc1c3O2FIstnktj5k33ye1y8Sl2DTM5ZccKfvFoYEAe18pIP-SQSe7svhEZGwFxINwEE');">
+<div class="digital" id ="CAandNY"style="background-image: url('https://lh3.googleusercontent.com/proxy/wjobPe6-orKoa6PH2lUephbS9k0RJwCRtvnpuuBp-LKNz8Jaroz8vdR4dv1wRIXog1qEvtklWIAWUUnl88LDH5VJHM8tftvagIivY_7zIssSwt0Gc1c3O2FIstnktj5k33ye1y8Sl2DTM5ZccKfvFoYEAe18pIP-SQSe7svhEZGwFxINwEE');">
   <div class="hide">
     <center>
     <h4>New Digital Art Event</h4>
@@ -68,6 +68,37 @@
     </center>
   </div>
 </div>
+  
+<div class="locations">
+  <h3>Locations</h3>
+</div>
+  
+<div class="CAdiv" style="background-color: #DFE8DC;">
+  <div class="CAimg" style="background-image: url('https://wallpapercave.com/wp/wp4064795.jpg')">
+  </div>
+  <div class="CAinfo">
+    <h4>California Locations</h4>
+    <ul>
+      <li>Los Angeles, CA: April 15th from 4:00pm-8:00pm</li>
+      <li>San Francisco, CA: April 16th from 4:00pm-8:00pm</li>
+      <li>San Diego, CA: April 17th from 4:00pm-8:00pm</li>
+    </ul>
+    
+  </div>
+  </div>
+  
+  <div class="NYdiv" style="background-color: #DFE8DC;">
+  <div class="NYimg" style="background-image: url('https://i.pinimg.com/originals/cc/e0/c7/cce0c7db236b5e269c7721de801bb8f7.jpg');">
+  </div>
+  <div class="NYinfo">
+    <h4>New York Locations</h4>
+  <ul>
+    <li>Brooklyn, NY: April 18th from 4:00pm-8:00pm</li>
+    <li>Manhattan, NY: April 19th from 4:00pm-8:00pm</li>
+    <li>Queens, NY: April 20th from 4:00pm-8:00pm</li>
+  </ul>
+  </div>
+  </div>
 
 <div class="meetthestaff" id="staff">
   <h3>Meet the Staff</h3>
@@ -130,11 +161,11 @@ div.stuck{
   overflow: hidden;
 }
 
-li {
+.bar{
   float: left;
 }
 
-li a {
+.bar a {
   display: block;
   color: white;
   text-align: center;
@@ -144,15 +175,15 @@ li a {
   color: #E63946;
 }
 
-li a:hover:not(.active) {
+.bar a:hover:not(.active) {
   background-color: #EBF5E9;
 }
 
-li a:hover{
+.bar a:hover{
 
 }
 
-.active{
+.bar .active{
   color: #A31420;
   background-color: #DFE8DC;
 }
@@ -288,6 +319,94 @@ body{
   filter: none;
 }
 
+.locations{
+  text-align: center;
+  padding: 2%;
+  transition: .4s;
+}
+
+.locations:hover{
+  color: #F1FAEE;
+  background-color: #EF8089;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.info{
+  text-align: center;
+  padding: 2%;
+}
+
+.CAimg{
+  width: 20%;
+  height: 20%;
+}
+
+.CAdiv{
+  transition: .4s;
+}
+
+.CAdiv:hover{
+  transform: scale(1.05)
+}
+
+.CAdiv:after{
+  content:"";
+  display: table;
+  clear: both;
+}
+
+.CAimg{
+  float: left;
+  width: 50%;
+  padding: 5%;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.CAinfo{
+  text-align: center;
+  padding: 2%;
+}
+
+.NYdiv{
+  transition: .4s;
+  background-color: #DFE8DC;
+}
+
+.NYdiv:hover{
+  transform: scale(1.05);
+}
+
+.NYdiv:after{
+  content:"";
+  display: table;
+  clear: both;
+}
+
+.NYimg{
+  float: right;
+  width: 50%;
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2%
+}
+
+.NYinfo{
+  text-align: center;
+  padding: 2%;
+  background-color: #DFE8DC;
+}
+
+ul{
+  line-height: 200%;
+  list-style-type: none;
+}
+
 .staff{
   text-align: center;
   background-color: #DFE8DC;
@@ -350,4 +469,5 @@ body{
   background-color: #EF8089;
   color: #F1FAEE;
 }
+  
 </style>
