@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <title>International Artist Day Celebration</title>
     <link rel="icon" href="https://cdn2.iconfinder.com/data/icons/graphic-design-flat-line/70/brush-512.png">
 </head>
@@ -24,7 +24,7 @@
   </div>
   
   <div class="mainimg">
-  </div>
+</div>
   
   <div class="intro" id="event">
     <div class="penart" style="background-image:url('https://cdn.shopify.com/s/files/1/0049/6261/5365/files/fountain-pen-CO-horizonal_large.png?v=1572382194');">
@@ -52,7 +52,7 @@
   </div>
   </div>
   
-  <div class="sketchdiv" style="background-color: #DFE8DC;">
+  <div class="sketchdiv" style="background-color: #EBF5E9;">
   <div class="sketchimg" style="background-image: url('https://i.pinimg.com/originals/5e/81/ee/5e81eeed8df43903c5fda0a604dcf414.jpg');">
   </div>
   <div class="sketchinfo">
@@ -61,13 +61,25 @@
   </div>
   </div>
   
-<div class="digital" id="CAandNY" style="background-image: url('https://static-2.gumroad.com/res/gumroad/files/1859850819279/470c55a0bfa84979a7a904fbff29e367/original/procreate%20tutorial%20pink.jpg');">
+<div class="digital" id="CAandNY" style="background-image: url('https://lh3.googleusercontent.com/aQo8zj11imE9oGUYohXTmZzEHD6NjZGR-PV0QDUg78W2EkdHlPhsHKRp2rcGA3iviJJ-6_XgsgfpH5C5zjpA0veGvLBzHihd_7apiTpI6yDRJxlVtMBkiafn-S4xF97JI247wE2wDu_Per_l1Cesrsj_KNsgx-qVK5Wd_abL1U_Rw_IC_cIRBaxnTjbnAv_dsrK9FVfx4sAw1XEybVYEdDZRFuvTOXs0EH3ATJDhJrKbDOO9Jx1CmG8zMUPec_Tzo7MEnpnMQkKE0n1e8zJf6VDxtMu18Hbq_OHu7O5BMC027D7cn7Diz4cGITTIJRPSCfgfSysCcCM8voHC1syVkxIFdrq-4L0yDJNMu-O83TUBj9xcU6nzO8X4N_5VzZEmuUHRpxvVE7xDh4iE8AUdOkQ9_pB6-MHDpvPDb7lmgloIUZ7sP6iPNjgmxwQQC1KNvDWmFnXn00xYV5DgVRf8PF6uKLeA61HbPR4tokLQTpwUpj6Tux5gZBYf2Aamu81ow5NlN8rNagR2wzHVK2IIR-pAgqpUCdGIixuyrtrWw9SNHjavSkWeOea2q7e6IrSXnKWrZUsfXYhbyvlrmSsxKxQ57JtD3XS5MLJyFtJgcCQ70ikFVcEJlI7EAuUQdA5BoqGl7FOBvSVXKrpJA34_fe0V45G5_65CXknRm5q5zXG8PLnR1WLc7czutY3fB2SqjhineykqNXFbRuYEKso44DM=w905-h1080-no?authuser=0');">
+  
   <div class="hide">
     <center>
     <h4>New Digital Art Event</h4>
     <p>Facilisis volutpat est velit egestas dui id ornare arcu odio. Facilisis volutpat est velit egestas. Consectetur adipiscing elit ut aliquam. Ipsum a arcu cursus vitae. Volutpat commodo sed egestas egestas fringilla phasellus faucibus. Integer feugiat scelerisque varius morbi enim nunc faucibus a pellentesque. Sed viverra tellus in hac habitasse platea dictumst. Sit amet consectetur adipiscing elit pellentesque habitant. Elit eget gravida cum sociis natoque penatibus et. Rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt lobortis. Tellus in hac habitasse platea dictumst vestibulum. Donec massa sapien faucibus et molestie ac feugiat sed.</p>
     </center>
   </div>
+</div>
+  
+<div class="gallery">
+  <h3>2021 Digital Art Gallery</h3>
+</div>
+  
+<div class="gallerywrapper">
+  <div class="box a">A</div>
+  <div class="box b">B</div>
+  <div class="box c">C</div>
+  <div class="box d">D</div>
 </div>
   
 <div class="locations">
@@ -134,6 +146,7 @@
 </html>
 
 <style>
+
 body{
   margin: 0%;
   font-family: georgia;
@@ -183,10 +196,6 @@ a{
 
 .bar a:hover:not(.active) {
   background-color: #EBF5E9;
-}
-
-.bar a:hover{
-
 }
 
 .bar .active{
@@ -324,6 +333,55 @@ body{
   color: #F1FAEE;
   filter: none;
   z-index: 50;
+}
+
+.gallery{
+  text-align: center;
+  padding: 2%;
+  transition: .4s;
+}
+
+.gallery:hover{
+  background-color: #EF8089;
+  color: #F1FAEE;
+}
+
+.gallerywrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box{
+  height: 300px;
+  border: 4px solid #F1FAEE;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: .4s;
+}
+
+.box:hover{
+  transform: scale(1.05);
+}
+
+.a{
+  background-image: url('https://images.procreate.art/197002/66a3df694tae405472.jpg');
+  height: 600px;
+  grid-column: 1;
+  grid-row: 1/3;
+}
+
+.b{
+  background-image: url('https://i.ytimg.com/vi/wdM7athAem0/maxresdefault.jpg');
+}
+
+.c{
+  background-image: url('https://magazine.artstation.com/wp-content/uploads/2020/11/nikolai-lockertsen-9a84738e-1e73-4bdf-bcd5-4a83a3751fb2-1024x768.jpg');
+}
+
+.d{
+  background-image: url('https://pbs.twimg.com/media/Er7AyR8XYAAXM-T.jpg');
+  grid-column: 2/4;
+  grid-row: 2;
 }
 
 .locations{
@@ -476,4 +534,5 @@ ul{
   background-color: #EF8089;
   color: #F1FAEE;
 }
+
 </style>
