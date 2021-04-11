@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TwoSet Violin</title>
+</head>
+<body>
+  
+  <div class="bigimg">
+  <div class="stuck">
+  <ul class="nav">
+  <li class="bar"><a class="navlinks" class="active" href="main.html">HOME</a></li>
+  <li class="bar"><a class="navlinks" href="#event">LIVE</a></li>
+  <li class="bar"><a class="navlinks" href="#CAandNY">SHOP</a></li>
+  <li class="bar"><a class="navlinks" href="#staff">ABOUT</a></li>
+  </ul>
+  </div>
+    <a href="#scrollchannel"><img class="arrow" src="https://uploads-ssl.webflow.com/5e961452aa6e89f98371a402/5f188203688c6b6bdebd0eea_Website%20Arrow%20Down.png" width="20"></a>
+  </div>
+
+<div class="channel" id="scrollchannel">
+  <img src="https://lh3.googleusercontent.com/proxy/ydMQ4vRpWm59obmgs7rHUPN5tWN75cfM7_GTAEmG2aQ1zrGKqwL8hnRSPyuqkNWRlOm4lGgkES6PdhmX7HX-Laf1LSLo9Mg" width="50" max-width="100%">
+  <h4>VISIT CHANNEL</h4>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <br>
+  <button class="button button1">
+    <a class="channellink" href="https://www.youtube.com/user/twosetviolin"><p>Twoset Violin</p></a>
+    </button>
+    </div>
+  
+</body>
+</html>
+
+<style>
+ html{
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0;
+  height: 100%;
+  background-color: #EAE6E5;
+  font-family: Trebuchet MS;
+}
+
+.bigimg{
+  max-width: 100%;
+  position: relative;
+  background-image: url('https://images.squarespace-cdn.com/content/v1/588eb710cd0f68ca7cf49206/1586917925736-BHLIX83I11594ABG7VPI/ke17ZwdGBToddI8pDm48kL013MWIi9514FfOvNjR1U97gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0luUmcNM2NMBIHLdYyXL-JzDXa0XIhgUb1y57opmLTrTaMxR8loNZTmCbc1BjxCxog/StudioTwoSet-Violin0835-web2.jpg?format=1500w');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 800px;
+}
+
+div.stuck{
+  max-width: 100%;
+  color: #E3DEDC;
+  background-color: #E3DEDC;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(0,0,0,0);
+  padding: 2%;
+}
+
+.navlinks{
+  text-decoration: none;
+  color: #E3DEDC;
+}
+
+.nav{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+}
+
+.bar{
+  float: left;
+}
+
+.bar .navlinks {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  color: #E3DEDC;
+}
+
+.bar .navlinks:hover:not(.active) {
+  color: white;
+}
+
+.bar .navlinks:hover{
+  color: white;
+}
+
+.bar .active{
+  color: #E3DEDC;
+  text-decoration: overline;
+}
+
+.arrow{
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translate(0px, 600px);
+  animation: mymove 5s infinite;
+  position: relative;
+}
+
+@keyframes mymove {
+  0% {top: 0px;}
+  50% {top: 20px;}
+  100% {top: 0px;}
+}
+
+.channel{
+  padding: 2%;
+  text-align: center;
+  background-color: #EAE6E5;
+}
+
+.channellink{
+  color: #565264;
+  text-decoration: none;
+  background-color: #565264;
+  transition: .4s;
+}
+
+.channellink:hover{
+  color: white;
+}
+
+.button1 {
+  max-width: 100%;
+  background-color: #EAE6E5; 
+  border: 2px solid #565264;
+  font-family: Trebuchet MS;
+  padding: 0% 1%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1:hover {
+  background-color: #706677;
+  color: white;
+}
+
+
+
+ 
+</style>
