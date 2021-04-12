@@ -18,7 +18,9 @@
   <li class="bar"><a class="navlinks" href="#staff">ABOUT</a></li>
   </ul>
   </div>
+    <div class="arrowdiv">
     <a href="#scrollchannel"><img class="arrow" src="https://uploads-ssl.webflow.com/5e961452aa6e89f98371a402/5f188203688c6b6bdebd0eea_Website%20Arrow%20Down.png" width="20"></a>
+  </div>
   </div>
 
 <div class="channel" id="scrollchannel">
@@ -40,7 +42,7 @@
   <div class="box f"></div>
   <div class="box g"></div>
 </div>
-  
+    
 </body>
 </html>
 
@@ -61,6 +63,7 @@ body{
 .bigimg{
   max-width: 100%;
   position: relative;
+  background-position: center;
   background-image: url('https://images.squarespace-cdn.com/content/v1/588eb710cd0f68ca7cf49206/1586917925736-BHLIX83I11594ABG7VPI/ke17ZwdGBToddI8pDm48kL013MWIi9514FfOvNjR1U97gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0luUmcNM2NMBIHLdYyXL-JzDXa0XIhgUb1y57opmLTrTaMxR8loNZTmCbc1BjxCxog/StudioTwoSet-Violin0835-web2.jpg?format=1500w');
   background-size: cover;
   background-repeat: no-repeat;
@@ -122,9 +125,17 @@ div.stuck{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  transform: translate(0px, 600px);
   animation: mymove 5s infinite;
   position: relative;
+}
+
+.arrowdiv{
+  bottom: 50px;
+  position: absolute;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 @keyframes mymove {
@@ -233,6 +244,7 @@ div.stuck{
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 
 
 </style>
