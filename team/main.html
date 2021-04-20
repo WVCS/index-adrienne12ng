@@ -65,7 +65,59 @@
   </div>
   
   <br>
-    
+  
+   <div class="entire">
+<section class="carousel" aria-label="Gallery">
+  <ol class="carousel__viewport">
+    <li id="carousel__slide1"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper">
+     
+    </li>
+    <li id="carousel__slide2"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper"></div>
+ 
+    </li>
+    <li id="carousel__slide3"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper"></div>
+      
+    </li>
+    <li id="carousel__slide4"
+        tabindex="0"
+        class="carousel__slide">
+      <div class="carousel__snapper"></div>
+      
+    </li>
+  </ol>
+  <aside class="carousel__navigation">
+    <ol class="carousel__navigation-list">
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide1"
+           class="carousel__navigation-button">Go to slide 1</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide2"
+           class="carousel__navigation-button">Go to slide 2</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide3"
+           class="carousel__navigation-button">Go to slide 3</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide4"
+           class="carousel__navigation-button">Go to slide 4</a>
+      </li>
+    </ol>
+  </aside>
+</section>
+</div>
+  
+  <br>
   
   <div class="teamimg">
   </div>
@@ -429,6 +481,7 @@ background-img:hover{
   width: 35%;
 }
 
+
 .team{
   text-align: center;
   padding: 2%;
@@ -464,6 +517,233 @@ background-img:hover{
     height: 200vh;
   }
 }
+
+@keyframes tonext {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: 100%;
+  }
+  98% {
+    left: 100%;
+  }
+  99% {
+    left: 0;
+  }
+}
+
+@keyframes tostart {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: -300%;
+  }
+  98% {
+    left: -300%;
+  }
+  99% {
+    left: 0;
+  }
+}
+
+@keyframes snap {
+  96% {
+    scroll-snap-align: center;
+  }
+  97% {
+    scroll-snap-align: none;
+  }
+  99% {
+    scroll-snap-align: none;
+  }
+  100% {
+    scroll-snap-align: center;
+  }
+}
+
+body {
+  max-width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.carousel{
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+* {
+  box-sizing: border-box;
+  scrollbar-color: transparent transparent; /* thumb and track color */
+  scrollbar-width: 0px;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: none;
+}
+
+* {
+  -ms-overflow-style: none;
+}
+
+ol, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel {
+  position: relative;
+  padding-top: 75%;
+  filter: drop-shadow(0 0 10px #0003);
+  perspective: 100px;
+}
+
+.carousel__viewport {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  overflow-x: scroll;
+  counter-reset: item;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel__slide {
+  position: relative;
+  flex: 0 0 100%;
+  width: 100%;
+  background-color: #f99;
+  counter-increment: item;
+}
+
+.carousel__slide:before {
+  content: counter(item);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%,-40%,70px);
+  color: #fff;
+  font-size: 2em;
+}
+
+.carousel__snapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: center;
+}
+
+@media (hover: hover) {
+  .carousel__snapper {
+    animation-name: tonext, snap;
+    animation-timing-function: ease;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+
+  .carousel__slide:last-child .carousel__snapper {
+    animation-name: tostart, snap;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel__snapper {
+    animation-name: none;
+  }
+}
+
+.carousel:hover .carousel__snapper,
+.carousel:focus-within .carousel__snapper {
+  animation-name: none;
+}
+
+.carousel__navigation {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+.carousel__navigation-list,
+.carousel__navigation-item {
+  display: inline-block;
+}
+
+.carousel__navigation-button {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #333;
+  background-clip: content-box;
+  border: 0.25rem solid transparent;
+  border-radius: 50%;
+  font-size: 0;
+  transition: transform 0.1s;
+}
+
+#carousel__slide1{
+  background-image: url('https://cdn.shopify.com/s/files/1/0246/2312/0436/products/mars_3_800x.jpg?v=1618347029');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#carousel__slide2{
+  background-image: url('https://cdn.shopify.com/s/files/1/0246/2312/0436/products/TwoSet-sticker-demo_800x.jpg?v=1575976977');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#carousel__slide3{
+  background-image: url('https://cdn.shopify.com/s/files/1/0246/2312/0436/collections/Beast_DSC_9076-2c3crop_1400x.jpg?v=1593581487');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#carousel__slide4{
+  background-image: url('https://i.pinimg.com/736x/f6/50/e1/f650e1580ac6ccccef684ba6d027ffd4.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.entire{
+  right: 24vw;
+  position: relative;
+  font-family: 'Lato', sans-serif;
+}
+
+@media screen and (max-width: 1000px){
+  .carousel{
+    max-width: 100%;
+  }
+  
+  .entire{
+    right: 0;
+  }
+}
+
 
 .live{
   padding: 2%;
