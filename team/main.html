@@ -7,7 +7,8 @@
   <title>TwoSet Violin</title>
   <link rel="icon" href="https://images.glints.com/unsafe/glints-dashboard.s3.amazonaws.com/company-logo/1cde1911ccd0c08c19f70d84d5925469.png">
 </head>
-<body>
+
+  <body>
   
   <div id="home" class="bigimg">
   <div class="stuck">
@@ -66,7 +67,7 @@
   
   <br>
   
-   <div class="entire">
+<div class="entire">
 <section class="carousel" aria-label="Gallery">
   <ol class="carousel__viewport">
     <li id="carousel__slide1"
@@ -116,12 +117,11 @@
   </aside>
 </section>
 </div>
+
   
   <br>
-  
-  <div class="teamimg">
-  </div>
-  
+
+
   <div class="team">
   <h4>JOIN THE TEAM</h4>
   <h5>OPEN CAREER POSITIONS</h5>
@@ -487,14 +487,6 @@ background-img:hover{
   padding: 2%;
 }
 
-.teamimg{
-  background-image: url('twoset team.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 50vh;
-}
-
 @media screen and (max-width: 1000px){
   .eddy{
     width: 100%;
@@ -563,14 +555,8 @@ background-img:hover{
   }
 }
 
-body {
-  max-width: 100%;
-  height: 100%;
-  margin: 0 auto;
-}
-
 .carousel{
-  max-width: 50rem;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0 1.25rem;
 }
@@ -609,6 +595,7 @@ ol, li {
   padding-top: 75%;
   filter: drop-shadow(0 0 10px #0003);
   perspective: 100px;
+  padding: 20%;
 }
 
 .carousel__viewport {
@@ -702,14 +689,14 @@ ol, li {
 
 #carousel__slide1{
   background-image: url('https://cdn.shopify.com/s/files/1/0246/2312/0436/products/mars_3_800x.jpg?v=1618347029');
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #carousel__slide2{
-  background-image: url('https://cdn.shopify.com/s/files/1/0246/2312/0436/products/TwoSet-sticker-demo_800x.jpg?v=1575976977');
-  background-position: center;
+  background-image: url('https://i.pinimg.com/originals/60/7c/ec/607cecd1f6ac812e34d7178c6c42b6af.jpg');
+  background-position: right bottom;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -723,13 +710,12 @@ ol, li {
 
 #carousel__slide4{
   background-image: url('https://i.pinimg.com/736x/f6/50/e1/f650e1580ac6ccccef684ba6d027ffd4.jpg');
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .entire{
-  right: 24vw;
   position: relative;
   font-family: 'Lato', sans-serif;
 }
@@ -737,6 +723,7 @@ ol, li {
 @media screen and (max-width: 1000px){
   .carousel{
     max-width: 100%;
+    padding: none;
   }
   
   .entire{
