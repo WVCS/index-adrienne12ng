@@ -1,2 +1,210 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aerial Theme Park</title>
+</head>
+<body>
+ 
+  <div id="mySidepanel" class="sidepanel">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="#home">HOME</a>
+  <a href="#live">ACTIVITIES</a>
+  <a href="https://twosetapparel.com/">LOCATIONS</a>
+  <a href="#info">ABOUT</a>
+</div>
+    
+  
+  <div id="home" class="banner">
+  <div class="3lines" style="background: rgba(0,0,0,0)">
+    <button class="openbtn" onclick="openNav()" style="background: rgba(0,0,0,0); color: black; position: fixed;">☰</button> 
+    </div>
+    
+    <button id="tickets">GET YOUR TICKETS HERE >></button>
+    
+    <div class="arrowdiv">
+    <a href="#info"><img class="arrow" src="https://uploads-ssl.webflow.com/5e961452aa6e89f98371a402/5f188203688c6b6bdebd0eea_Website%20Arrow%20Down.png" width="20"></a>
+  </div>
+    <img class="bird" src="bird.png" style="width: 10%;">
+  </div>
+  
+  <div class="div1" id="info">
+    <div class="info">
+      <h3 style="letter-spacing: 2px;">AERIAL THEME PARK</h3>
+      <p>Ipsum dolor sit amet consectetur. Nisi lacus sed viverra tellus in hac habitasse. Magnis dis parturient montes nascetur ridiculus. Sed libero enim sed faucibus turpis. Id velit ut tortor pretium viverra suspendisse potenti nullam. Duis tristique sollicitudin nibh sit amet. Sed vulputate mi sit amet. Purus in mollis nunc sed id. Eu non diam phasellus vestibulum lorem sed risus. Cursus vitae congue mauris rhoncus aenean vel elit. Urna nunc id cursus metus aliquam eleifend. Volutpat commodo sed egestas egestas fringilla phasellus faucibus. Eget egestas purus viverra accumsan in nisl nisi scelerisque eu. Diam vel quam elementum pulvinar etiam non.
+      </p>
+      <p>
+Pharetra vel turpis nunc eget lorem dolor sed. Facilisis sed odio morbi quis commodo odio aenean. Tempus iaculis urna id volutpat. Non enim praesent elementum facilisis leo vel fringilla. Mauris pharetra et ultrices neque ornare aenean euismod. Dis parturient montes nascetur ridiculus mus mauris vitae ultricies leo. Risus feugiat in ante metus dictum at. In dictum non consectetur a erat nam at. Nec nam aliquam sem et. Purus sit amet luctus venenatis lectus magna fringilla urna porttitor. Id interdum velit laoreet id. Tellus cras adipiscing enim eu turpis egestas. Nulla facilisi etiam dignissim diam quis enim lobortis scelerisque. Volutpat ac tincidunt vitae semper quis lectus nulla at volutpat. Donec ultrices tincidunt arcu non sodales neque sodales ut. Pretium nibh ipsum consequat nisl vel pretium lectus. Eget mauris pharetra et ultrices neque ornare aenean. Imperdiet massa tincidunt nunc pulvinar sapien. Ultrices eros in cursus turpis massa tincidunt dui ut. Fermentum dui faucibus in ornare quam viverra orci sagittis.</p>
+    </div>
+    <div class="infoImg">
+      <img style="transform: scale(1.3)" src="https://lh3.googleusercontent.com/proxy/w2-satiQa91b0o_uoV2FkSHF3RNWigEBNSlZeExXP_rw_7VCLxiIqFPj11dNJs1k4TsYRzMrwdxrbWUhP6rJQar7-qotEKoiVqf-I6tVgDkOLMa-Xqn7clCK6FMQSRgQV9A7IlVeS3lHuCswymvHhbnFlx0S3b_BxF6LWCtxU4zvwtRtL1Qwof-Ga4NLlVSFXz0">
+    </div>
+  </div>
+</body>
 </html>
+
+<style>
+  html{
+  scroll-behavior: smooth;
+  height: 100%;
+  margin: 0;
+}
+
+body{
+  margin: 0;
+  height: 100%;
+  background-color: #EAE6E5;
+  font-family: Trebuchet MS;
+}
+
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,.8);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0);
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  padding: 2%;
+}
+
+.openbtn:hover {
+  
+}
+
+
+#tickets{
+  padding: 1%;
+  background: #242424;
+  color: white;
+  transition: .4s;
+  border: #242424;
+  border-radius: 2%;
+  right: 10px;
+  position: fixed;
+  cursor: pointer;
+  top: 10px;
+  font-family: Trebuchet MS;
+  text-decoration: none;
+}
+
+#tickets:hover{
+  letter-spacing: 3px
+}
+
+.banner{
+  max-width: 100%;
+  position: relative;
+  background-position: center;
+  background-image: url('https://media.architecturaldigest.com/photos/5b3260780dcdbf2512f61c9c/16:9/w_2560%2Cc_limit/Prater%2525205%252520Photo%252520Credit%252520WienTourismus-Peter%252520Rigaud.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.bird{
+  padding: 2%;
+  bottom: 10px;
+  position: absolute;
+  display: block;
+  right: 10px;
+}
+
+.arrow{
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  animation: mymove 5s infinite;
+  position: relative;
+}
+
+.arrowdiv{
+  bottom: 50px;
+  position: absolute;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+@keyframes mymove {
+  0% {top: 0px;}
+  50% {top: 20px;}
+  100% {top: 0px;}
+}
+
+.info{
+  height: 90vh;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.div1:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.info{
+  float: left;
+  width: 50%;
+  padding: 5%;
+  height: 90vh;
+  text-align: center;
+}
+
+.infoImg{
+  float: right;
+  width: 50%;
+  height: 90vh;
+  padding: 10%;
+}
+</style>
+
+<script>
+  function openNav() {
+  document.getElementById("mySidepanel").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+}
+
+
+</script>
