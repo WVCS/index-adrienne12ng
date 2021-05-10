@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="bird.png">
   <title>Aerial Theme Park</title>
 </head>
 <body>
@@ -12,10 +11,9 @@
   <div id="mySidepanel" class="sidepanel">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
   <a href="#home">HOME</a>
-	  <a href="#info">ABOUT</a>
-	    <a href="#activities">ACTIVITIES</a>
-	   <a href="#price">PRICE</a>
-	   <a href="#location">LOCATIONS</a>
+  <a href="#activities">ACTIVITIES</a>
+  <a href="#location">LOCATIONS</a>
+  <a href="#info">ABOUT</a>
 </div>
     
   
@@ -24,7 +22,7 @@
     <button class="openbtn" onclick="openNav()" style="background: rgba(0,0,0,0); color: black; position: fixed;">☰</button> 
     </div>
     
-    <button id="tickets">GET YOUR TICKETS HERE >></button>
+    <button onclick="document.location='#price'" id="tickets">GET YOUR TICKETS HERE >></button>
     
     <div class="arrowdiv">
     <a href="#info"><img class="arrow" src="https://uploads-ssl.webflow.com/5e961452aa6e89f98371a402/5f188203688c6b6bdebd0eea_Website%20Arrow%20Down.png" width="20"></a>
@@ -32,9 +30,9 @@
     <img class="bird" src="bird.png" style="width: 10%;">
   </div>
   
+  <button id="ticketsMobile">GET YOUR TICKETS HERE >></button>
   <div class="div1" id="info">
     <div class="infoImg">
-      <img style="transform: scale(.9);" src="https://www.jing.fm/clipimg/full/100-1000590_a-year-in-review-brown-coffee-cup-mockup.png">
     </div>
     <hr style="border: 1px solid gray;">
     <div class="info">
@@ -53,16 +51,24 @@ Pharetra vel turpis nunc eget lorem dolor sed. Facilisis sed odio morbi quis com
     <div class="box a"></div>
     <div class="box b"></div>
     <div class="box c"></div>
-    <div class="box d"><p class="hidden">Swinging Carousel >></p></div>
-    <div class="box e"><p class="hidden">Ferris Wheel >></p></div>
-    <div class="box f"><p class="hidden">Roller Coaster >></p></div>
+    <div class="box d"><a href="#activities" class="hidden">Swinging Carousel >></a></div>
+    <div class="box e"><a href="#activities" class="hidden">Ferris Wheel >></a></div>
+    <div class="box f"><a href="#activities" class="hidden">Roller Coaster >></a></div>
   </div>
   
-  <div class="blank">
-  </div>
-	  <div class="header" id="price"><h4>PRICING</h4>
+  
+  
+  
+<!-----------------adrienne's code end---->
+  
+  
+  
+  
+	<div class="price" id="price"> 
+  <div class="header" id="activities"><h4>PRICING</h4>
 		  </div>
-  <section class="pricing pt-5 mt-5 mb-5">
+  <br>
+    <section class="pricing pt-5 mt-5 mb-5">
             <div class="container">
                 <div class="top">
                   <div class="toggle-btn">
@@ -85,7 +91,7 @@ Pharetra vel turpis nunc eget lorem dolor sed. Facilisis sed odio morbi quis com
                       <li>Access the amusement park for 10 minutes </li>
                       <li>Ticket Support</li>
                     </ul>
-                    <a href="#" class="button pricing-button">Start Now</a>
+                    <a href="#price" class="button pricing-button">Start Now</a>
                   </div>
                   <div class="packages">
                     <div class="pricing-title">
@@ -100,7 +106,7 @@ Pharetra vel turpis nunc eget lorem dolor sed. Facilisis sed odio morbi quis com
                       <li>Ticket Support</li>
                       <li>E-mail Support 7/24</li>
                     </ul>
-                    <a href="#" class="button pricing-button">Start Now</a>
+                    <a href="#price" class="button pricing-button">Start Now</a>
                   </div>
                   <div class="packages">
                     <div class="pricing-title">
@@ -114,14 +120,15 @@ Pharetra vel turpis nunc eget lorem dolor sed. Facilisis sed odio morbi quis com
                       <li>Free Soft Drinks</li>
                       <li>Full Support Package</li>
                     </ul>
-                    <a href="#" class="button pricing-button">Let's Talk</a>
+                    <a href="#price" class="button pricing-button">Start Now</a>
                   </div>
                 </div>
               </div> 
         </section>
-		    <div class="header" id="location"><h4>LOCATION</h4>
+  </div>
+		    <div class="header" id="location"><h4>LOCATIONS</h4>
 			    </div>
-<h1>Location: Jakarta, Indonesia</h1>
+<h1>Locations: Jakarta, Indonesia</h1>
 <p>← <a href="http://coastercritic.com/roller-coaster-reviews/" target="_blank">View The Article About Us</a></p>
 <br>
 <script
@@ -129,7 +136,6 @@ src="https://maps.googleapis.com/maps/api/js">
 </script>
 
 <div id="googleMap" ></div>
-</br>
  <footer>
     <div class="haha">
       <small>&copy;2018 <strong>AERIAL THEME PARK</strong>, All Rights Reserved</small>
@@ -144,7 +150,7 @@ src="https://maps.googleapis.com/maps/api/js">
 </html>
 
 <style>
-  html{
+html{
   scroll-behavior: smooth;
   height: 100%;
   margin: 0;
@@ -176,6 +182,7 @@ body{
   color: #818181;
   display: block;
   transition: 0.3s;
+  letter-spacing: 1px;
 }
 
 .sidepanel a:hover {
@@ -197,7 +204,6 @@ body{
   padding: 10px 10px;
   border: none;
   padding: 2%;
-  z-index: 100;
 }
 
 .openbtn:hover {
@@ -222,13 +228,7 @@ body{
 }
 
 #tickets:hover{
-  letter-spacing: 3px
-}
-
-@media screen and (max-width: 1000px){
-  #tickets{
-    padding: 2%;
-  }
+  letter-spacing: 3px;
 }
 
 .banner{
@@ -243,7 +243,7 @@ body{
 
 .bird{
   padding: 2%;
-  top: 80px;
+  top: 70px;
   position: fixed;
   display: block;
   right: 10px;
@@ -274,6 +274,26 @@ body{
   100% {top: 0px;}
 }
 
+#ticketsMobile{
+  width: 100%;
+  background-color: #242424;
+  padding: 5%;
+  color: white;
+  transition: .4s;
+  border: #242424;
+  border-radius: 2%;
+  position: sticky;
+  cursor: pointer;
+  font-family: Trebuchet MS;
+  text-decoration: none;
+  z-index: 100;
+  display: none;
+}
+
+#ticketsMobile:hover{
+  letter-spacing: 3px;
+}
+
 *{
   box-sizing: border-box;
 }
@@ -300,10 +320,13 @@ body{
   float: right;
   width: 50%;
   height: 60vh;
-  padding: 0% 4%;
+  background-image: url(https://www.jing.fm/clipimg/full/100-1000590_a-year-in-review-brown-coffee-cup-mockup.png);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: top right;
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1400px){
   .info{
     float: none;
     width: 100%;
@@ -313,9 +336,44 @@ body{
     float: none;
     width: 100%;
     height: 80vh;
+    background-position: center;
+    background-size: 90%
+  }
+} 
+  
+@media screen and (max-width: 1000px){
+  #ticketsMobile{
+    display: block;
+  }
+  
+  #tickets{
+    padding: 2%;
+    display: none;
+  }
+  
+  .bird{
+    display: none;
+  }
+  
+  .infoimg{
+    width: 60vw;
+    padding: 10%;
   }
 }
 
+@media screen and (max-width: 767px){
+  .infoimg{
+    float: none;
+    width: 100%;
+    height: 80vh;
+    padding-right: 5%;
+  }
+  
+  .div1{
+    height: 180vh;
+  }
+}
+  
 .header{
   width: 100%;
   text-align: center;
@@ -379,9 +437,23 @@ body{
     display: none;
   }
 }
-  body{
-  background-color: rgba(244, 240, 238, 1);
+
+.hidden{
+  color: gray;
+  text-decoration: none;
 }
+
+
+
+
+
+
+
+.price{
+  background-color: lightgray;
+  padding-bottom: 5%;
+}
+
 .packages {
   margin: 20px;
   height: auto;
@@ -487,7 +559,7 @@ label {
   transition: 0.4s;
 }
 input:checked + .slider {
-  background-color: #50bfe6;
+  background-color: salmon;
 }
 input:focus + .slider {
   box-shadow: 0 0 1px #50bfe6;
@@ -553,7 +625,7 @@ h1+p a:hover {
   font-family: Trebuchet MS;
 }
 
-#googleMap {width:100%;height:230px;}
+#googleMap {width:100%;height:40vh;}
 
 /* ==== SIMPLE FOOTER ==== */
 
@@ -582,26 +654,34 @@ footer small {
 }
 
 .footer-nav a {
-  color: #c74f78;
+  color: salmon;
   text-decoration: none;
   margin: 0 .5rem;
   display: inline-block;
+  transtion: .2s;
 }
 
 .footer-nav a:hover {
-  color: #f26896;
+  color: #FFA095;
   transition: color .15s ease-in-out;
 }
 </style>
 
 <script>
-  function openNav() {
+ function openNav() {
   document.getElementById("mySidepanel").style.width = "250px";
 }
 
 function closeNav() {
   document.getElementById("mySidepanel").style.width = "0";
 }
+
+
+
+
+
+
+
   function check() {
 	var checkBox = document.getElementById("checbox");
 	var text1 = document.getElementsByClassName("text1");
