@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="bird.png">
   <title>Aerial Theme Park</title>
 </head>
 <body>
@@ -128,12 +129,31 @@ Pharetra vel turpis nunc eget lorem dolor sed. Facilisis sed odio morbi quis com
   </div>
 		    <div class="header" id="location"><h4>LOCATIONS</h4>
 			    </div>
-<h1>Locations: London, UK </h1>
-<p>← <a href="http://coastercritic.com/roller-coaster-reviews/" target="_blank">View The Article About Us</a></p>
+  
+  
+  <ul class="list">
+    <li style="padding-top: 4%;">UNITED STATES</li>
+    <hr>
+    <li>LOS ANGELES, CA</li>
+    <li>NEW YORK CITY, NY</li>
+    <li>SALT LAKE CITY, UT</li>
+    <li>SAN FRANCISCO, CA</li>
+    <li>SEATTLE, WA</li>
+    <li style="padding-top: 4%;">ASIA</li>
+    <hr>
+    <li>HONG KONG</li>
+    <li>SEOUL</li>
+    <li>SINGAPORE</li>
+    <li style="padding-bottom: 4%;">TAIPEI</li>
+  </ul>
+  
 <br>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79394.58497765078!2d-0.21833435676194451!3d51.5484177318753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2sus!4v1620712350913!5m2!1sen!2sus"  width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-	</br>
-	<footer>
+<script
+src="https://maps.googleapis.com/maps/api/js">
+</script>
+
+<div id="googleMap" ></div>
+ <footer>
     <div class="haha">
       <small>&copy;2018 <strong>AERIAL THEME PARK</strong>, All Rights Reserved</small>
       <nav class="footer-nav">
@@ -145,6 +165,7 @@ Pharetra vel turpis nunc eget lorem dolor sed. Facilisis sed odio morbi quis com
   </footer>
 </body>
 </html>
+
 
 <style>
 html{
@@ -622,6 +643,14 @@ h1+p a:hover {
   font-family: Trebuchet MS;
 }
 
+.list{
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 2%;
+  color: darkslategrey;
+}
+
+#googleMap {width:100%;height:40vh;}
 
 /* ==== SIMPLE FOOTER ==== */
 
@@ -673,6 +702,11 @@ function closeNav() {
 }
 
 
+
+
+
+
+
   function check() {
 	var checkBox = document.getElementById("checbox");
 	var text1 = document.getElementsByClassName("text1");
@@ -690,5 +724,27 @@ function closeNav() {
   }
   check();
 
+var myCenter=new google.maps.LatLng(-6.2085841,106.7635933);
+var marker;
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:20,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  animation:google.maps.Animation.BOUNCE
+  });
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
 
 </script>
