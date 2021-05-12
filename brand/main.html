@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lint</title>
+</head>
+<body>
+  <div class="banner">
+    <div id="navbar">
+      <a href="#home">⌂</a>
+      <a href="#news">NEWS &#8595</a>
+      <a href="#contact">CONTACT &#8595</a>
+      <a href="#about">ABOUT &#8595</a>
+    </div>
+    <div class="arrowdiv">
+    <a href="#space"><img class="arrow" id="arrow" src="https://uploads-ssl.webflow.com/5e961452aa6e89f98371a402/5f188203688c6b6bdebd0eea_Website%20Arrow%20Down.png" width="20"></a>
+  </div>
+  </div>
+  
+  <div class="space" id="space">
+  </div>
+</body>
+</html>
+
+<style>
+  html{
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: whitesmoke;
+  font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+}
+
+.banner{
+  height: 100vh;
+  background-image: url(https://images.unsplash.com/photo-1547111255-722e72869f6c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#navbar {
+  background: rgba(0,0,0,0);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: whitesmoke;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  transition: .4s;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+#navbar a:hover {
+  letter-spacing: 2px;
+}
+
+.arrow{
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  animation: mymove 5s infinite;
+  position: relative;
+}
+
+.arrowdiv{
+  bottom: 50px;
+  position: absolute;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+#arrow{
+  animation-duration: 3s;
+}
+
+@keyframes mymove {
+  0% {top: 0px;}
+  50% {top: 20px;}
+  100% {top: 0px;}
+}
+
+
+.space{
+  height: 200vh;
+}
+
+</style>
+
+<script>
+  
+  var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+  
+</script>
