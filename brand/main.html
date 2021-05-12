@@ -9,11 +9,18 @@
 <body>
   <div class="banner">
     <div id="navbar">
-      <a href="#home">⌂</a>
-      <a href="#news">NEWS &#8595</a>
-      <a href="#contact">CONTACT &#8595</a>
-      <a href="#about">ABOUT &#8595</a>
+      <div class="leftNav">
+      <a href="#">⌂</a>
+      <a href="">MEN &#8595</a>
+      <a href="">WOMEN &#8595</a>
+      <a href="">NEW ARRIVALS &#8595</a>
+      <a href="">TRENDING &#8595</a>
+      </div>
+      <div class="rightNav">
+      <a href="#"><img src="lintLogo.png"></a>
+      </div>
     </div>
+    
     <div class="arrowdiv">
     <a href="#space"><img class="arrow" id="arrow" src="https://uploads-ssl.webflow.com/5e961452aa6e89f98371a402/5f188203688c6b6bdebd0eea_Website%20Arrow%20Down.png" width="20"></a>
   </div>
@@ -58,7 +65,7 @@ body {
   display: block;
   color: whitesmoke;
   text-align: center;
-  padding: 15px;
+  padding: 15px 1.5%;
   text-decoration: none;
   transition: .4s;
   font-weight: bold;
@@ -67,6 +74,11 @@ body {
 
 #navbar a:hover {
   letter-spacing: 2px;
+}
+
+.rightNav{
+  float: right;
+  padding: 15px 1.5%;
 }
 
 .arrow{
@@ -97,11 +109,11 @@ body {
   100% {top: 0px;}
 }
 
-
 .space{
   height: 200vh;
 }
 
+/*figure out how to fill house*/
 </style>
 
 <script>
