@@ -10,23 +10,28 @@
   <div class="banner">
     <div id="navbar">
       <div class="leftNav">
-      <a href="#">⌂</a>
-      <a href="">MEN &#8595</a>
-      <a href="">WOMEN &#8595</a>
-      <a href="">NEW ARRIVALS &#8595</a>
-      <a href="">TRENDING &#8595</a>
+      <a class="navlink" href="#">⌂</a>
+      <a class="navlink" href="#men">MEN &#8595</a>
+      <a class="navlink" href="#women">WOMEN &#8595</a>
+      <a class="navlink" href="#new">NEW ARRIVALS &#8595</a>
+      <a class="navlink" href="#trending">TRENDING &#8595</a>
       </div>
       <div class="rightNav">
-      <a href="#"><img src="lintLogo.png"></a>
+      <a class="navlink" href="#"><img src="lintLogo.png"></a>
+      </div> 
+      <div class="announcement">
+      <h1>OUR OUTDOOR COLLECTION</h1>
+        <a class="browse" href="">BROWSE >></a>
       </div>
     </div>
     
     <div class="arrowdiv">
-    <a href="#space"><img class="arrow" id="arrow" src="https://uploads-ssl.webflow.com/5e961452aa6e89f98371a402/5f188203688c6b6bdebd0eea_Website%20Arrow%20Down.png" width="20"></a>
+    <a href="#new"><img class="arrow" id="arrow" src="https://uploads-ssl.webflow.com/5e961452aa6e89f98371a402/5f188203688c6b6bdebd0eea_Website%20Arrow%20Down.png" width="20"></a>
   </div>
   </div>
   
-  <div class="space" id="space">
+  <div class="new" id="new">
+    <h4 style="letter-spacing: 2px">NEW ARRIVALS</h4>
   </div>
 </body>
 </html>
@@ -60,25 +65,49 @@ body {
   transition: top 0.3s;
 }
 
-#navbar a {
+#navbar .navlink {
   float: left;
   display: block;
   color: whitesmoke;
   text-align: center;
-  padding: 15px 1.5%;
+  padding: 15px 1.3%;
   text-decoration: none;
   transition: .4s;
   font-weight: bold;
   letter-spacing: 1px;
 }
 
-#navbar a:hover {
+#navbar .navlink:hover {
   letter-spacing: 2px;
 }
 
 .rightNav{
   float: right;
-  padding: 15px 1.5%;
+  padding: 15px 1.3%;
+}
+
+.announcement{  
+  position: absolute;
+  top: 500%;
+  right: 65%;
+  color: whitesmoke;
+}
+
+.browse{
+  padding: 4%;
+  background: rgba(0,0,0,0);
+  border: 2px solid whitesmoke;
+  text-decoration: none;
+  color: whitesmoke;
+  letter-spacing: 1px;
+  font-weight: bold;
+  transition: .4s;
+}
+
+.browse:hover{
+  background-color: whitesmoke;
+  color: darkslategrey;
+  letter-spacing: 3px;
 }
 
 .arrow{
@@ -109,11 +138,12 @@ body {
   100% {top: 0px;}
 }
 
-.space{
-  height: 200vh;
+.new{
+  height: 50vh;
+  color: darkslategrey;
+  text-align: center;
+  padding: 2%;
 }
-
-/*figure out how to fill house*/
 </style>
 
 <script>
