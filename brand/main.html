@@ -17,27 +17,36 @@
       <a class="navlink" href="#trending">TRENDING &#8595</a>
       </div>
       <div class="rightNav">
-      <a class="navlink" href="#"><img src="lintLogo.png"></a>
+      <a class="navlink" href="#"><img src="lintLogo.png" width="30"></a>
       </div> 
-      <div class="announcement">
-      <h1>OUR OUTDOOR COLLECTION</h1>
-        <a class="browse" href="">BROWSE >></a>
-      </div>
     </div>
     
     <div class="arrowdiv">
     <a href="#new"><img class="arrow" id="arrow" src="https://uploads-ssl.webflow.com/5e961452aa6e89f98371a402/5f188203688c6b6bdebd0eea_Website%20Arrow%20Down.png" width="20"></a>
   </div>
+    
   </div>
   
   <div class="new" id="new">
     <h4 style="letter-spacing: 2px">NEW ARRIVALS</h4>
+    <p>Sit amet massa vitae tortor. Proin fermentum leo vel orci porta non pulvinar neque laoreet. Odio ut sem nulla pharetra diam. Quam pellentesque nec nam aliquam sem. Amet dictum sit amet justo donec enim. Ipsum dolor sit amet consectetur adipiscing. Dolor morbi non arcu risus quis varius quam quisque. Dolor sit amet consectetur adipiscing elit. Quisque egestas diam in arcu cursus euismod quis. Felis donec et odio pellentesque diam volutpat commodo. Netus et malesuada fames ac turpis egestas. Vulputate ut pharetra sit amet. Proin libero nunc consequat interdum varius sit. Gravida rutrum quisque non tellus. Morbi quis commodo odio aenean sed adipiscing diam donec. Bibendum est ultricies integer quis auctor elit. Et leo duis ut diam quam nulla. Tincidunt tortor aliquam nulla facilisi cras. Dignissim sodales ut eu sem integer vitae justo eget magna. Vitae congue eu consequat ac felis donec et.<p>
   </div>
+  
+  <div class="newImg">
+    <button onclick="topFunction()" id="browseBtn">BROWSE >></button>
+  </div> 
+  
+  <img class="aboutImg" src="https://cdn.pixabay.com/photo/2021/04/05/14/52/hiking-6153739_960_720.png" width="300">
+  <div class="aboutText" style="text-align: center;">
+    <h4 style="letter-spacing: 2px">ABOUT US</h4>
+    <p>Eu scelerisque felis imperdiet proin fermentum leo. Volutpat ac tincidunt vitae semper. Quis vel eros donec ac odio tempor orci dapibus ultrices. Leo urna molestie at elementum eu facilisis. Purus gravida quis blandit turpis cursus in hac. Fermentum dui faucibus in ornare quam viverra. Varius duis at consectetur lorem. Vitae congue mauris rhoncus aenean vel elit scelerisque mauris. Et netus et malesuada fames ac turpis egestas maecenas pharetra. Morbi tincidunt augue interdum velit euismod in pellentesque massa.</p>
+  </div>
+  
 </body>
 </html>
 
 <style>
-  html{
+ html{
   scroll-behavior: smooth;
 }
 
@@ -86,30 +95,6 @@ body {
   padding: 15px 1.3%;
 }
 
-.announcement{  
-  position: absolute;
-  top: 500%;
-  right: 65%;
-  color: whitesmoke;
-}
-
-.browse{
-  padding: 4%;
-  background: rgba(0,0,0,0);
-  border: 2px solid whitesmoke;
-  text-decoration: none;
-  color: whitesmoke;
-  letter-spacing: 1px;
-  font-weight: bold;
-  transition: .4s;
-}
-
-.browse:hover{
-  background-color: whitesmoke;
-  color: darkslategrey;
-  letter-spacing: 3px;
-}
-
 .arrow{
   max-width: 100%;
   display: block;
@@ -139,10 +124,58 @@ body {
 }
 
 .new{
-  height: 50vh;
+  height: 230px;
   color: darkslategrey;
   text-align: center;
   padding: 2%;
+  z-index: 100;
+  padding: 2%;
+}
+
+.newImg{
+  height: 400px;
+  background-image: url('https://www.adaptnetwork.com/wp-content/uploads/2018/07/clothing-carbon-footprint-1040x585.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+#browseBtn{
+  padding: 1%;
+  background: rgba(0,0,0,0);
+  border: 2px solid whitesmoke;
+  color: whitesmoke;
+  text-decoration: none;
+  transition: .4s;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#browseBtn:hover{
+  background-color: whitesmoke;
+  color: darkslategrey;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+.aboutText{
+  padding: 0% 2%;
+  color: darkslategrey;
+}
+
+.aboutImg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3%;
 }
 </style>
 
