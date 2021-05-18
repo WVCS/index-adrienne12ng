@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lint</title>
+  <title>Lint Co.</title>
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Maple_leaf_--_Unknown.svg/945px-Maple_leaf_--_Unknown.svg.png">
 </head>
 <body>
   <div class="banner">
@@ -41,11 +42,17 @@
     <h4 style="letter-spacing: 2px">OUTDOOR APPAREL SINCE 2021</h4>
     <p>Eu scelerisque felis imperdiet proin fermentum leo. Volutpat ac tincidunt vitae semper. Quis vel eros donec ac odio tempor orci dapibus ultrices. Leo urna molestie at elementum eu facilisis. Purus gravida quis blandit turpis cursus in hac. Fermentum dui faucibus in ornare quam viverra. Varius duis at consectetur lorem. Vitae congue mauris rhoncus aenean vel elit scelerisque mauris. Et netus et malesuada fames ac turpis egestas maecenas pharetra. Morbi tincidunt augue interdum velit euismod in pellentesque massa.</p>
   </div>
+  
+  <hr style="border: 1px solid darkslategray; width: 75%">
+  
+  <h4>STAY CONNECTED</h4>
   <div class="wrapper">
-    <div class="box a"></div>
-    <div class="box b"></div>
-    <div class="box c"></div>
+    <div class="box a"><img class="social" src="https://www.seekpng.com/png/full/2-26435_white-instagram-icon-png-instagram-logo-instagram-instagram.png" width="50"></div>
+    <div class="box b"><img class="social" src="https://www.seekpng.com/png/full/2-26435_white-instagram-icon-png-instagram-logo-instagram-instagram.png" width="50"></div>
+    <div class="box c"><img class="social" src="https://www.seekpng.com/png/full/2-26435_white-instagram-icon-png-instagram-logo-instagram-instagram.png" width="50"></div>
+    <div class="box d"><img class="social" src="https://www.seekpng.com/png/full/2-26435_white-instagram-icon-png-instagram-logo-instagram-instagram.png" width="50"></div>
   </div>
+  
   <div class="newsletter">
     <h4>SIGN UP TO OUR NEWSLETTER</h4>
   <center>
@@ -198,29 +205,46 @@ h4{
 
 .wrapper{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .box{
   height: 400px;
-  border: 16px solid whitesmoke;
+  border: 8px solid whitesmoke;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .a{
-  background-image: url(https://wallpapercave.com/wp/wp2693862.jpg);
+  background-image: url(https://images.unsplash.com/photo-1534617580102-6342ca2bfd48?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80);
   background-position: center;
+  position: relative;
 }
 
 .b{
-  background-image: url(https://nomadict.org/wp-content/uploads/2018/07/Screenshot_20180719-075345-828x1024.jpg);
+  background-image: url(https://images.unsplash.com/photo-1440186347098-386b7459ad6b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
   background-position: center;
+  position: relative;
 }
 
 .c{
-  background-image: url();
-  background-position: ;
+  background-image: url(https://images.unsplash.com/photo-1544235259-e48c72e6b7f1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80);
+  position: relative;
+}
+
+.d{
+  background-image: url(https://images.unsplash.com/photo-1605100383941-8d4a6c0560f7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80);
+  position: relative;
+}
+
+.social{
+  left: 8px;
+  bottom: 8px;
+  position: absolute;
+}
+
+.newsletter{
+  padding: 2%;
 }
 
 #email{
