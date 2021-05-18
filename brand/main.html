@@ -17,7 +17,7 @@
       <a class="navlink" href="#trending">TRENDING &#8595</a>
       </div>
       <div class="rightNav">
-      <a class="navlink" href="#"><img src="lintLogo.png" width="50"></a>
+      <a class="navlink" href="#"><img src="leaf.png" width="20"></a>
       </div> 
     </div>
     
@@ -33,20 +33,32 @@
   </div>
   
   <div class="newImg">
-    <button onclick="topFunction()" id="browseBtn">BROWSE >></button>
+    <button onclick="topFunction()" id="browseBtn">BROWSE NEW ARRIVALS>></button>
   </div> 
   
   <img class="aboutImg" src="https://cdn.pixabay.com/photo/2021/04/05/14/52/hiking-6153739_960_720.png" width="300">
   <div class="aboutText" style="text-align: center;">
-    <h4 style="letter-spacing: 2px">ABOUT US</h4>
+    <h4 style="letter-spacing: 2px">OUTDOOR APPAREL SINCE 2021</h4>
     <p>Eu scelerisque felis imperdiet proin fermentum leo. Volutpat ac tincidunt vitae semper. Quis vel eros donec ac odio tempor orci dapibus ultrices. Leo urna molestie at elementum eu facilisis. Purus gravida quis blandit turpis cursus in hac. Fermentum dui faucibus in ornare quam viverra. Varius duis at consectetur lorem. Vitae congue mauris rhoncus aenean vel elit scelerisque mauris. Et netus et malesuada fames ac turpis egestas maecenas pharetra. Morbi tincidunt augue interdum velit euismod in pellentesque massa.</p>
+  </div>
+  <div class="wrapper">
+    <div class="box a"></div>
+    <div class="box b"></div>
+    <div class="box c"></div>
+  </div>
+  <div class="newsletter">
+    <h4>SIGN UP TO OUR NEWSLETTER</h4>
+  <center>
+  <input type="text" id="email" name="fname" placeholder="Email Address">
+    <a class="submitArrow" href="">&#10132;</a>
+  </center>
   </div>
   
 </body>
 </html>
 
 <style>
- html{
+html{
   scroll-behavior: smooth;
 }
 
@@ -54,14 +66,20 @@ body {
   margin: 0;
   background-color: whitesmoke;
   font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+  color: darkslategrey;
+}
+
+h4{
+  letter-spacing: 2px;
+  text-align: center;
 }
 
 .banner{
   height: 100vh;
-  background-image: url(https://images.unsplash.com/photo-1547111255-722e72869f6c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
+  background-image: url(https://lh3.googleusercontent.com/8yODvqoGLgTeRRnXfTfZDQQsSEKsXdfQwL-68LxtfJ7QpRokz2IMKoA6MO-1vzqHhjBXPVZMB16ribmCqq18ASKq1clgTQwuw1B6hfVQ0TdgEoeWiyrKi-1CXpPOpRYRVJXkbP-Lh7ScNSb2wZis4svkTJdvauNLMlGuvPxu_Y8JB22AwZ4C5TLVSs-ISGgIVrUV8rIPDYkdaAbCJdiCv_5CHtI9rr8geWTHvBbYpj8P987Z4rggzGCOS11u1YpjtxTaPqmo96R7M1U98dp8k8xigGpmlVej_Lsi2pLtcJqJKcUooIMgKT8DAb8MSNG0zyFabP0L9caOy8M05YlNIZyj4O1-tdk0FInj4V--jN8VkFJw5RNc_XhjCMWGySpuTaJlv54j6WX1m_gobTjJIKcm0rkLGj9SS76fJNwq6p_ksR8veHdDV5lW029bF64mVn3HU2e8MvpCCyPyuu4d750bn1nneLsc8YI5UsHYuW4stkzqRD5MH-TfeecGq_wFURKsoYM6c0qchEBuMYr70Ot9AbvIdU5k5MycE7UlNCrPng2Yi8atdhSSSSWXODHZWYA5GEaVq28e8oQGr8mOeHS3K11eiWF8IhNutgtGSOGYMJU1PKgZnohWUWC3ktCaaZWk0ifOw24qRWUKqNq02W4WDy8W7aoM3ahbdue_LIEwTBbyQcc6j_2Qz03JQ5THxVzjaPR_zG4v_CqExUNZ9e4=w1051-h701-no?authuser=0);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
   background-attachment: fixed;
 }
 
@@ -87,7 +105,7 @@ body {
 }
 
 #navbar .navlink:hover {
-  letter-spacing: 2px;
+  transform: scale(1.08);
 }
 
 .rightNav{
@@ -124,12 +142,11 @@ body {
 }
 
 .new{
-  height: 230px;
   color: darkslategrey;
   text-align: center;
   padding: 2%;
   z-index: 100;
-  padding: 2%;
+  padding: 4% 2%;
 }
 
 .newImg{
@@ -169,6 +186,7 @@ body {
 .aboutText{
   padding: 0% 2%;
   color: darkslategrey;
+  padding-bottom: 4%;
 }
 
 .aboutImg{
@@ -176,6 +194,58 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding: 3%;
+}
+
+.wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box{
+  height: 400px;
+  border: 16px solid whitesmoke;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.a{
+  background-image: url(https://wallpapercave.com/wp/wp2693862.jpg);
+  background-position: center;
+}
+
+.b{
+  background-image: url(https://nomadict.org/wp-content/uploads/2018/07/Screenshot_20180719-075345-828x1024.jpg);
+  background-position: center;
+}
+
+.c{
+  background-image: url();
+  background-position: ;
+}
+
+#email{
+  width: 20%;
+  padding: 1%;
+}
+
+#submit:hover{
+  cursor: pointer;
+  background-color: darkslategrey;
+  border: 2px whitesmoke;
+  color: whitesmoke;
+  letter-spacing: 3px;
+  padding-bottom: 4%;
+}
+
+.submitArrow{
+  text-decoration: none;
+  font-size: 20px;
+  color: darkslategrey;
+  padding-bottom: 4%;
+}
+
+.submitArrow:hover{
+  transform: translate(1%, 0%);
 }
 </style>
 
