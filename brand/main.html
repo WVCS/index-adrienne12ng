@@ -16,6 +16,15 @@
       <a class="navlink" href="#women">WOMEN &#8595</a>
       <a class="navlink" href="#new">NEW ARRIVALS &#8595</a>
       <a class="navlink" href="#trending">TRENDING &#8595</a>
+      <a class="navlink2" href="#"> 
+        <div id="entireDiv">
+          <form autocomplete="off" action="/action_page.php">
+            <div class="autocomplete">
+              <input id="myInput" type="text" placeholder="SEARCH">
+            </div>
+          </form>
+      </div>
+      </a>
       <a class="navlink2" href="#"><img src="leaf.png" width="20"></a>
       <a class="navlink2" href="#"><i class="fas fa-shopping-bag"></i></a>
     </div>
@@ -132,6 +141,20 @@ h4{
 
 #navbar .navlink2:hover {
   transform: scale(1.08);
+}
+
+#myInput{
+  background: rgba(0,0,0,0);
+  border: none;
+  color: whitesmoke;
+  border-bottom: 2px solid whitesmoke;
+  outline: none;
+}
+
+#myInput::placeholder{
+  color: whitesmoke;
+  font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+  font-weight: bold;
 }
 
 .arrow{
