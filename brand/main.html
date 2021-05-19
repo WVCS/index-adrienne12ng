@@ -4,22 +4,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lint Co.</title>
   <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Maple_leaf_--_Unknown.svg/945px-Maple_leaf_--_Unknown.svg.png">
+  <title>Lint Co.</title>
 </head>
+  
 <body>
   <div class="banner">
     <div id="navbar">
-      <div class="leftNav">
       <a class="navlink" href="#">⌂</a>
       <a class="navlink" href="#men">MEN &#8595</a>
       <a class="navlink" href="#women">WOMEN &#8595</a>
       <a class="navlink" href="#new">NEW ARRIVALS &#8595</a>
       <a class="navlink" href="#trending">TRENDING &#8595</a>
-      </div>
-      <div class="rightNav">
-      <a class="navlink" href="#"><img src="leaf.png" width="20"></a>
-      </div> 
+      <a class="navlink2" href="#"><img src="leaf.png" width="20"></a>
+      <a class="navlink2" href="#"><i class="fas fa-shopping-bag"></i></a>
     </div>
     
     <div class="arrowdiv">
@@ -45,19 +43,24 @@
   
   <hr style="border: 1px solid darkslategray; width: 75%">
   
+  <div style="text-align: center;">
   <h4>STAY CONNECTED</h4>
+  <p style="color: darkslategrey;">Share your photos with us and we'll feature them here!</p>
+  </div>
   <div class="wrapper">
-    <div class="box a"><img class="social" src="https://www.seekpng.com/png/full/2-26435_white-instagram-icon-png-instagram-logo-instagram-instagram.png" width="50"></div>
-    <div class="box b"><img class="social" src="https://www.seekpng.com/png/full/2-26435_white-instagram-icon-png-instagram-logo-instagram-instagram.png" width="50"></div>
-    <div class="box c"><img class="social" src="https://www.seekpng.com/png/full/2-26435_white-instagram-icon-png-instagram-logo-instagram-instagram.png" width="50"></div>
-    <div class="box d"><img class="social" src="https://www.seekpng.com/png/full/2-26435_white-instagram-icon-png-instagram-logo-instagram-instagram.png" width="50"></div>
+    <div class="box a"><img class="social" src="https://www.seekpng.com/png/full/2-26435_white-instagram-icon-png-instagram-logo-instagram-instagram.png" width="40"></div>
+    <div class="box b"><img class="social" src="https://www.seekpng.com/png/full/2-26435_white-instagram-icon-png-instagram-logo-instagram-instagram.png" width="40"></div>
+    <div class="box c"><img class="social" src="https://www.seekpng.com/png/full/2-26435_white-instagram-icon-png-instagram-logo-instagram-instagram.png" width="40"></div>
+    <div class="box d"><img class="social" src="https://www.seekpng.com/png/full/2-26435_white-instagram-icon-png-instagram-logo-instagram-instagram.png" width="40"></div>
   </div>
   
   <div class="newsletter">
     <h4>SIGN UP TO OUR NEWSLETTER</h4>
+    <p style="color: darkslategrey;">Get the latest news on our products and events...</p>
   <center>
   <input type="text" id="email" name="fname" placeholder="Email Address">
-    <a class="submitArrow" href="">&#10132;</a>
+    <button id="reveal" type="button" onclick="document.getElementById('testing').style.display='block'"><p class="submitArrow">&#10132;</p></button>
+    <p><i id="testing">Thanks for your response! We'll notify you on the latest news :)</i></p>
   </center>
   </div>
   
@@ -115,9 +118,20 @@ h4{
   transform: scale(1.08);
 }
 
-.rightNav{
+#navbar .navlink2{
   float: right;
+  display: block;
+  color: whitesmoke;
+  text-align: center;
   padding: 15px 1.3%;
+  text-decoration: none;
+  transition: .4s;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+#navbar .navlink2:hover {
+  transform: scale(1.08);
 }
 
 .arrow{
@@ -245,6 +259,7 @@ h4{
 
 .newsletter{
   padding: 2%;
+  text-align: center;
 }
 
 #email{
@@ -263,13 +278,22 @@ h4{
 
 .submitArrow{
   text-decoration: none;
-  font-size: 20px;
+  font-size: 24px;
   color: darkslategrey;
   padding-bottom: 4%;
 }
 
 .submitArrow:hover{
-  transform: translate(1%, 0%);
+  cursor: pointer;
+}
+
+#reveal{
+  border: none;
+  background: rgba(0,0,0,0);
+}
+
+#testing{
+  display: none;
 }
 </style>
 
