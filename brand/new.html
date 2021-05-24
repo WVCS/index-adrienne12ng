@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zip 21</title>
+  
+</head>
+  
+<body>
+  
+<div id="navbar">
+  <a href="#" id="logo">ZIP 21</a>
+  <div id="navbar-right">
+    <a href="main.html">HOME</a>
+    <a  class="active" href="#new.html">NEW ARRIVALS</a>
+    <a href="cart.html">CART</a>
+  </div>
+</div>
+
+  <div class="banner">
+  </div>
+  
+  <h4>FJALLRAVEN KANKEN</h4>
+  
+  <div class="wrapper">
+
+<div class="container">
+  <img src="https://images.unsplash.com/photo-1596540114499-049fe8531260?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" class="image">
+  <div class="overlay">
+    <div class="text">Grey Kånken Backpack</div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="https://images.unsplash.com/photo-1602090573683-68c6f9228ed7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Deep Yellow Kånken Backpack</div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="https://i.pinimg.com/originals/d1/bc/88/d1bc88a6ef2a2a380f750f0f2b8aa293.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Burgundy Kånken Backpack</div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="https://di2ponv0v5otw.cloudfront.net/posts/2020/08/05/5f2aaa79bcdb2fe714104acb/m_5f2aaa9e93649f1f007a9a8a.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Classic Kånken Backpack</div>
+  </div>
+</div>
+</div>
+  <br>
+  <br>
+  
+<div class="northface">
+</div>
+  
+  <h4>THE NORTH FACE</h4>
+  <div class="wrapper">
+
+<div class="container">
+  <img src="https://skatter.com/files/2008/07/north-face-recon-model-back.jpg" class="image">
+  <div class="overlay">
+    <div class="text">Router Backpack</div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="https://9to5toys.com/wp-content/uploads/sites/5/2019/03/The-North-Face-Macys.jpg?quality=82&strip=all" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Router Transit Backpack</div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="https://bagacademy.com/wp-content/uploads/2019/10/best-north-face-backpack.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Surge Backpack</div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="https://cdn.mos.cms.futurecdn.net/XiX8sDmeBeJLjAoVaYyKYU.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Borealis Classic Backpack</div>
+  </div>
+</div>
+</div>
+  <br>
+  <br>
+  
+  </body>
+</html>
+
+<style>
+html{
+  scroll-behavior: smooth;
+}
+
+body { 
+  margin: 0;
+  font-family: Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+  color: darkslategrey;
+  background-color: whitesmoke;
+}
+
+h4{
+  color: darkslategrey;
+  text-align: center;
+  letter-spacing: 2px;
+  padding: 4%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #f0f0f0;
+  padding: 90px 10px;
+  transition: 0.4s; 
+  position: fixed; 
+  width: 100%;
+  top: 0;
+  z-index: 99;
+}
+
+#navbar a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  transition: .4s;
+}
+
+#navbar #logo {
+  font-size: 35px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+  letter-spacing: 3px;
+}
+
+#navbar a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+#navbar-right {
+  float: right;
+}
+
+@media screen and (max-width: 580px) {
+  #navbar {
+    padding: 20px 10px !important;
+  }
+  
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  #navbar-right {
+    float: none;
+  }
+}
+
+.banner{
+  height: 100vh;
+  background-image: url(https://cdn.escapismmagazine.com/gallery/5bc4a032c299b.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-attachment: fixed;
+}
+
+.wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.container {
+  position: relative;
+  border: 8px solid whitesmoke;
+  height: 400px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: rgba(0,0,0,.6);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.northface{
+  height: 65vh;
+  background-image: url(https://images.unsplash.com/photo-1606681165865-368301603250?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media screen and (max-width: 1000px){
+  .wrapper{
+    grid-template-columns: 100%;
+  }
+}
+</style>
+
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("navbar").style.padding = "30px 10px";
+    document.getElementById("logo").style.fontSize = "25px";
+  } else {
+    document.getElementById("navbar").style.padding = "80px 10px";
+    document.getElementById("logo").style.fontSize = "35px";
+  }
+}
+</script>
